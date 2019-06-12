@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>Les clés des utilisateurs</h2>
+
+<ul>
+    {% for name, key in users.items %}
+    <li>{{ name }} => {{ key }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Les groupes</h2>
+
+<ul>
+    {% for name, keys in usergoups.items %}
+    <li>{{ name }} => {{ keys }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Les permissions générés</h2>
+
+{{ perms }}
+
+<h2>Les accès utilisateur</h2>
+
+<ul>
+    {% for name, key in user_access.items %}
+    <li>{{ name }} => {{ key }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
