@@ -1,4 +1,4 @@
-# aSSHes: Access SSH Enforce Security
+# aSSHes: A SSH key Exchange Server 
 
 ## Build database
 
